@@ -1,0 +1,23 @@
+{
+  "snapshot_date": "2026-11-25",
+  "scope": "documentation-and-implementation-summary",
+  "authority": "Published snapshot of locally controlled project records; current task evidence remains local",
+  "platform_requirement": "AD26 for all subsequent EDA design tasks; Visio remains system-design stage",
+  "actual_library_host_in_case": "AD22",
+  "ad26_full_library_flow": "pending migration and acceptance",
+  "native_ad_invoked_by_package": false,
+  "files_sha256": {
+    "hardware-design/cases/2026-11-25-rf-incremental-update.md": "27aec47efb0baedb614aa7c288b94c2c55b1ad8f6bcdaa6b74f01278807b7e12",
+    "hardware-design/docs/efficiency-review.md": "3cefbe7c90462cefd8d4790ffa5afc849199085abe4ba95318c2903db0e0ecc1",
+    "hardware-design/docs/footprint-design.md": "9579a161e5a2b2e767598e6ac5f06db132ae2294de81070cac4838196ee0d223",
+    "hardware-design/docs/platform-policy.md": "9c20aa5f63a1967827276328289f6ee28105ced6037b1d7d94151618408221ee",
+    "hardware-design/docs/schematic-to-pcb.md": "c4afc65c3215ee2c81736ea0661084aceed883ad03126f9e19449884a94534e5",
+    "hardware-design/README.md": "1aae4a4f33b746443eae4bd636ad6e27d041f503e2f59334a1ef3d126518440f"
+  },
+  "excluded": [
+    "real schematic/PCB/library binaries",
+    "manufacturer manuals",
+    "raw runtime logs",
+    "machine-specific profiles, personal paths and credentials"
+  ]
+}

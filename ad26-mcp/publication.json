@@ -7,7 +7,7 @@
   "standard_mcp_tools": 5,
   "fixture_origin": "synthetic, not native evidence",
   "files_sha256": {
-    "README.md": "364823ac389bf5cb97b3bc71ec053f103649e9a31145ef3207ea6e21d1be550f",
+    "README.md": "fcf24aae8a380ec4af6dd1a38dffae5670bd6d265241a881f1b35b6c74293864",
     "ad26-mcp/README.md": "b208abbc2e6377120e6c042fa1c4d9802075639a529b49f220081a1b3dabf55a",
     "ad26-mcp/docs/protocol.md": "16b3a1c9ad4a8db98001a998944bf698b40cb00c4af8982b342cb06ce241f5c3",
     "ad26-mcp/docs/setup.md": "01a29372c63b2abca1709baad0c392b60f1db526d094c46b17865efc542d9ab8",

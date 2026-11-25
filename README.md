@@ -22,6 +22,7 @@ A skill library based on Altium Designer
 - **看懂 AD26 MCP 的通信方式**：区分标准 MCP、Python 受控客户端和原生文件 IPC，知道请求如何进入 AD、结果如何返回。
 - **复用一套稳定的能力开发流程**：从前提核验、探针、安装到验收、回滚和接续，避免每轮重新设计执行路线。
 - **给下一次任务一个清晰起点**：用结构化模板记录授权、目标副本、精确判据和证据，不把口头结论当交付。
+- **复用封装与原理图落地流程**：从手册参数、真实模型绑定到原图增量修改、限定转 PCB，区分设计要求和已经验证的能力。
 
 ## 三步开始
 
@@ -33,6 +34,8 @@ A skill library based on Altium Designer
 | 接入自己的 AD26 环境 | [环境准备](ad26-mcp/docs/setup.md) |
 | 移植或修复一条能力 | [Pipeline](ad26-mcp/docs/pipeline.md) |
 | 查询命令与工具的区别 | [命令目录](ad26-mcp/docs/commands.md) |
+| 设计封装、修改原理图并同步 PCB | [硬件设计流程](hardware-design/README.md) |
+| 查看 AD26 单平台要求与当前缺口 | [平台要求](hardware-design/docs/platform-policy.md) |
 
 ### 2. 填一份任务模板
 
@@ -89,6 +92,8 @@ flowchart LR
 | 请求与响应的合成样例 | [examples](ad26-mcp/examples/request.ping.json) |
 | 新一轮任务与跨聊接续 | [任务模板](ad26-mcp/templates/task.json) / [接续提示](ad26-mcp/templates/continuation.md) |
 | 文档包更新 | [Changelog](ad26-mcp/CHANGELOG.md) |
+| 封装、原理图与 PCB 增量流程 | [硬件设计记录](hardware-design/README.md) |
+| 本次射频设计变更与新增电容 | [2026-11-25 实施记录](hardware-design/cases/2026-11-25-rf-incremental-update.md) |
 
 <details>
 <summary><strong>使用前了解的边界</strong></summary>
