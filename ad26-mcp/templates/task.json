@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "template_only": true,
+  "workflow": "../docs/pipeline.md",
+  "notes": [
+    "被动任务模板，不是可直接执行的脚本；先按当前指令填齐占位值。",
+    "空值表示尚未取证，不是false、0或新的执行状态。",
+    "只在实际执行后填verdict：attempted/partial/failed/verified，并注明verified_scope。"
+  ],
+  "task_id": null,
+  "branch": null,
+  "allowed_branches": [
+    "readonly_inventory",
+    "probe_only",
+    "install_acceptance",
+    "runtime_closure"
+  ],
+  "directive": {
+    "source": null,
+    "revision": null,
+    "supersedes": [],
+    "acceptance_revision": null
+  },
+  "authorization": {
+    "code_author": null,
+    "allowed_modified_files": [],
+    "copy_creation_authorized": false,
+    "test_targets": [],
+    "protected_real_assets": [],
+    "save_authorized": false,
+    "reload_authorized": false,
+    "restart_scope": null,
+    "forbidden_actions": []
+  },
+  "baseline": {
+    "profile_path": null,
+    "revision": null,
+    "protocol_version": null,
+    "capabilities_ordered": [],
+    "file_fingerprints": [],
+    "observed_host": {
+      "pid": null,
+      "version": null,
+      "windows_evidence": null,
+      "observed_at": null
+    },
+    "active_document": null,
+    "loaded_documents_evidence": null,
+    "unsaved_changes": [],
+    "watchdog": {
+      "running": null,
+      "pause_preexisting": null,
+      "pause_created_by_this_task": false
+    },
+    "unresolved_request_ids": []
+  },
+  "delivery": {
+    "files": [],
+    "capability_delta": {
+      "add": [],
+      "remove": [],
+      "expected_ordered_after": []
+    },
+    "revision_change_authorized": false,
+    "prjscr_registration_change": null,
+    "backup_paths": []
+  },
+  "probes": [],
+  "probe_evidence_item_shape": {
+    "source_path": null,
+    "bytes": null,
+    "sha256": null,
+    "compile_evidence": null,
+    "runtime_evidence": null,
+    "scope": null,
+    "preconditions": [],
+    "reuse_reason": null
+  },
+  "acceptance_cases": [],
+  "acceptance_case_shape": {
+    "case_id": null,
+    "depends_on": [],
+    "target_document": null,
+    "focus_required": null,
+    "allow_open_if_not_loaded": false,
+    "request": {
+      "command": null,
+      "params_ascii_only": true,
+      "params": {}
+    },
+    "response_mode": null,
+    "required_keys_by_path": {},
+    "expected_values": {},
+    "array_length_rules": {},
+    "cross_checks": [],
+    "valid_negative_results": [],
+    "expected_error_code": null,
+    "mutation": {
+      "kind": null,
+      "restore_required": false,
+      "restore_action": null
+    },
+    "on_failure": "stop_dependent_chain_and_preserve_original_evidence",
+    "result": {
+      "keys_ok": null,
+      "values_ok": null,
+      "verdict": null,
+      "verified_scope": null,
+      "request_id": null,
+      "raw_response_path": null,
+      "compile_error_path": null
+    }
+  },
+  "persistence_gate": {
+    "required": false,
+    "evidence": []
+  },
+  "runtime_gate": {
+    "required": false,
+    "evidence": []
+  },
+  "rollback": {
+    "authorized": false,
+    "files": [],
+    "metadata_steps": [],
+    "host_entry": null,
+    "verification_cases": []
+  },
+  "output": {
+    "report_path": null,
+    "raw_evidence_dir": null,
+    "current_state_pointer": "records/current-state.md"
+  },
+  "handoff": {
+    "completed_scopes": [],
+    "not_executed": [],
+    "failures": [],
+    "unknown_outcomes": [],
+    "guard_and_pause_final": null,
+    "active_document_final": null,
+    "unsaved_changes_final": [],
+    "do_not_repeat": [],
+    "next_authorized_action": null
+  }
+}

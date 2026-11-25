@@ -1,0 +1,15 @@
+{
+  "protocol_version": 26,
+  "instance_id": "ad26",
+  "session_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "revision": "ad26-unified-v1.3-generic",
+  "id": "00000000000000000000000000000001",
+  "success": true,
+  "data": {
+    "pong": true,
+    "script_version": "ad26-unified-v1.3-generic",
+    "protocol_version": 26,
+    "cast_errors": 0
+  },
+  "error": null
+}

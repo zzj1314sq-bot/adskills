@@ -1,0 +1,39 @@
+{
+  "package_version": "1.0.0",
+  "published_scope": "documentation-contracts-pipeline-only",
+  "date": "2026-11-25",
+  "native_protocol_version": 26,
+  "native_commands": 47,
+  "standard_mcp_tools": 5,
+  "fixture_origin": "synthetic, not native evidence",
+  "files_sha256": {
+    "README.md": "a1aa518ce08785f549be13f188571f07e2e96278d9fe0dd39152c9fee3bb4123",
+    "ad26-mcp/README.md": "d77d720e77f4864786e5e5feee2b99de94f4bab3aa19cfd9648954dd4361ae68",
+    "ad26-mcp/docs/protocol.md": "16b3a1c9ad4a8db98001a998944bf698b40cb00c4af8982b342cb06ce241f5c3",
+    "ad26-mcp/docs/setup.md": "01a29372c63b2abca1709baad0c392b60f1db526d094c46b17865efc542d9ab8",
+    "ad26-mcp/docs/verification.md": "513394c966e26e376104d4129843fff87383d21353743846eed358a71ca76af8",
+    "ad26-mcp/templates/continuation.md": "7d128d290976dec40ac6990e862ecc98542026f292bda52e9035a0f2ce60a4db",
+    "ad26-mcp/CHANGELOG.md": "d62cf0109e33e0c4513e6cbc108061ccc2aca7def6b52f77247b5ee6c9161980",
+    "ad26-mcp/.gitignore": "7ac34e50e93401e30293bb3d2dcddff12ec9d237c33976ce3d8d4dda6ed8234a",
+    "ad26-mcp/docs/pipeline.md": "1a9f8a0ba256cd0e123f4d1bd5b2e2713fbb1f6e4a5c5750e0fc55386ec6a731",
+    "ad26-mcp/templates/task.json": "bcf9b3ecf336de3d7119b42e6b4dbe127699cafd206688505126c40e099f26d2",
+    "ad26-mcp/catalog/commands.json": "b31fba32a5087ea9deea0f50d0831d4266f5f75fbf4e574f698573dfb97aa63f",
+    "ad26-mcp/docs/commands.md": "e0e25966c95b1e9b87823fb03c478ef5f7a69b9033fdb46fdc697d234d155217",
+    "ad26-mcp/examples/request.ping.json": "b32dd75a48dec255bb8568e8d1ed8bf04a26014bd2c8585ebdeef74a47290ebd",
+    "ad26-mcp/examples/response.ping.json": "4a2e413699fda2a0848d79cc469f52e24e291468be6a0aec44675d514715e8be",
+    "ad26-mcp/examples/response.error.json": "5b07e3b8ca22b6529e58d9140d418f7ee4f93ea8ce061eba7eb51caf035e8c0f",
+    "ad26-mcp/examples/response.geometry.json": "ad311657efe872f6d4657a0d81e58d50bb44493bee2566a793a956c1763da56c",
+    "ad26-mcp/schemas/request.schema.json": "c43a78aac183edafa152ec61dcb92e08d3e03e60b8e81f5e4668ea032aabe85b",
+    "ad26-mcp/schemas/response.schema.json": "7998da82f2f563205b6f699ae2494c034de5e0fb159996247d5ca3e2db882032",
+    "ad26-mcp/schemas/geometry-data.schema.json": "2fe6cd703bf8b89ef2dabdf74c9e70e050d28983dd16773966c130c14d67e145",
+    "ad26-mcp/tools/validate_package.py": "21d200ca7b22e0f2b631470e2e96918316700117a1681b34cb4485f8395f0cbb",
+    ".github/workflows/ad26-docs.yml": "0a819a11ad6ce8407f937f95bbdc852d6f9496a1f93ea6d033114f33664ba95b"
+  },
+  "excluded": [
+    "native scripts and binaries",
+    "real projects and libraries",
+    "machine profiles and connection files",
+    "raw logs and internal acceptance reports",
+    "credentials and personal filesystem paths"
+  ]
+}

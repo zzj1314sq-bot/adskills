@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Preferred native AD26 request envelope",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "instance_id",
+    "session_id",
+    "id",
+    "command",
+    "params"
+  ],
+  "properties": {
+    "protocol_version": {
+      "const": 26
+    },
+    "instance_id": {
+      "const": "ad26"
+    },
+    "session_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{32}$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{32}$"
+    },
+    "command": {
+      "type": "string",
+      "enum": [
+        "application.ping",
+        "application.get_version",
+        "application.stop_server",
+        "application.get_open_documents",
+        "application.get_active_document",
+        "application.set_active_document",
+        "application.run_process",
+        "pcb.component_silk_frame",
+        "lo.snapshot",
+        "lo.sync",
+        "lo.test_document",
+        "lo.delete",
+        "project.get_focused",
+        "project.get_open_projects",
+        "project.get_project_path",
+        "project.get_documents",
+        "project.compile",
+        "project.open",
+        "project.close",
+        "project.get_messages",
+        "project.get_compile_freshness",
+        "project.get_design_stats",
+        "project.get_nets",
+        "project.find_component",
+        "project.get_bom",
+        "generic.query_objects",
+        "generic.modify_objects",
+        "generic.delete_objects",
+        "generic.batch_modify",
+        "generic.place_wire",
+        "generic.place_net_label",
+        "generic.place_port",
+        "generic.place_sch_component_from_library",
+        "generic.set_sch_components_parameters",
+        "library.get_component_details",
+        "library.set_current_component",
+        "library.get_components",
+        "library.uninstall_library",
+        "library.set_model_source",
+        "library.get_footprints",
+        "library.get_footprint_pads",
+        "pcb.get_board_statistics",
+        "pcb.get_components",
+        "pcb.get_layer_stackup",
+        "pcb.get_mech_layer_names",
+        "pcb.set_layer_visibility",
+        "generic.get_sch_geometry"
+      ]
+    },
+    "params": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Recursive ASCII parameter admission is an extra semantic constraint. This schema is stricter than malformed-request fallback handling."
+}

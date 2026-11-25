@@ -1,0 +1,74 @@
+{
+  "protocol_version": 26,
+  "instance_id": "ad26",
+  "session_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "revision": "ad26-unified-v1.3-generic",
+  "id": "00000000000000000000000000000001",
+  "success": true,
+  "data": {
+    "doc": "C:\\AD26_TEST\\Example.SchDoc",
+    "coordinate_unit": "mil",
+    "limit": 3,
+    "truncated": false,
+    "counts": {
+      "components": 0,
+      "pins": 0,
+      "wires": 1,
+      "buses": 0,
+      "net_labels": 0,
+      "ports": 0,
+      "power_ports": 0,
+      "junctions": 0,
+      "sheet_symbols": 1,
+      "sheet_entries": 1
+    },
+    "unsupported_kinds": [
+      "arc",
+      "bezier",
+      "ellipse",
+      "elliptical_arc",
+      "line",
+      "rectangle",
+      "round_rectangle",
+      "polygon",
+      "polyline",
+      "image"
+    ],
+    "components": [],
+    "pins": [],
+    "wires": [
+      {
+        "vertices": 2,
+        "x1": 0,
+        "y1": 0,
+        "x2": 100,
+        "y2": 0
+      }
+    ],
+    "buses": [],
+    "net_labels": [],
+    "ports": [],
+    "power_ports": [],
+    "junctions": [],
+    "sheet_symbols": [
+      {
+        "index": 1,
+        "x": 100,
+        "y": 100,
+        "width_mils": 200,
+        "height_mils": 300
+      }
+    ],
+    "sheet_entries": [
+      {
+        "sheet_index": 1,
+        "name": "INPUT",
+        "io_type": 0,
+        "side": 1,
+        "x": 100,
+        "y": 150
+      }
+    ]
+  },
+  "error": null
+}

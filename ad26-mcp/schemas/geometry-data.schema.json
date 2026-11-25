@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bounded schematic geometry success data",
+  "type": "object",
+  "required": [
+    "doc",
+    "coordinate_unit",
+    "limit",
+    "truncated",
+    "counts",
+    "unsupported_kinds",
+    "components",
+    "pins",
+    "wires",
+    "buses",
+    "net_labels",
+    "ports",
+    "power_ports",
+    "junctions",
+    "sheet_symbols",
+    "sheet_entries"
+  ],
+  "properties": {
+    "doc": {
+      "type": "string"
+    },
+    "coordinate_unit": {
+      "const": "mil"
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "truncated": {
+      "type": "boolean"
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "components",
+        "pins",
+        "wires",
+        "buses",
+        "net_labels",
+        "ports",
+        "power_ports",
+        "junctions",
+        "sheet_symbols",
+        "sheet_entries"
+      ],
+      "properties": {
+        "components": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pins": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wires": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "buses": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "net_labels": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ports": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "power_ports": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "junctions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sheet_symbols": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sheet_entries": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "unsupported_kinds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "pins": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "wires": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "buses": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "net_labels": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "ports": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "power_ports": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "junctions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "sheet_symbols": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "index",
+          "x",
+          "y",
+          "width_mils",
+          "height_mils"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer"
+          },
+          "x": {
+            "type": "integer"
+          },
+          "y": {
+            "type": "integer"
+          },
+          "width_mils": {
+            "type": "integer"
+          },
+          "height_mils": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "sheet_entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sheet_index",
+          "name",
+          "io_type",
+          "side",
+          "x",
+          "y"
+        ],
+        "properties": {
+          "sheet_index": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "io_type": {
+            "type": "integer"
+          },
+          "side": {
+            "type": "integer"
+          },
+          "x": {
+            "type": "integer"
+          },
+          "y": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$comment": "Only symbol and entry row fields audited here. It does not imply all other rows or every truncated association are validated."
+}

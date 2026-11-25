@@ -1,0 +1,351 @@
+{
+  "catalog_version": "1.0.0",
+  "snapshot_date": "2026-11-25",
+  "revision": "ad26-unified-v1.3-generic",
+  "native_protocol_version": 26,
+  "native_command_count": 47,
+  "standard_mcp_tool_count": 5,
+  "commands": [
+    {
+      "name": "application.ping",
+      "category": "application",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [
+        "ad26_health"
+      ],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "application.get_version",
+      "category": "application",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [
+        "ad26_health"
+      ],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "application.stop_server",
+      "category": "application",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [
+        "ad26_stop"
+      ],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "application.get_open_documents",
+      "category": "application",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "application.get_active_document",
+      "category": "application",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "application.set_active_document",
+      "category": "application",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "application.run_process",
+      "category": "application",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "pcb.component_silk_frame",
+      "category": "pcb",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [
+        "ad26_component_silk_frame"
+      ],
+      "verification_scope": "Historical task-specific acceptance only; no arbitrary design guarantee"
+    },
+    {
+      "name": "lo.snapshot",
+      "category": "lo",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [
+        "ad26_lo_snapshot"
+      ],
+      "verification_scope": "Historical task-specific acceptance only; no arbitrary design guarantee"
+    },
+    {
+      "name": "lo.sync",
+      "category": "lo",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [
+        "ad26_lo_sync"
+      ],
+      "verification_scope": "Historical task-specific acceptance only; no arbitrary design guarantee"
+    },
+    {
+      "name": "lo.test_document",
+      "category": "lo",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Historical task-specific acceptance only; no arbitrary design guarantee"
+    },
+    {
+      "name": "lo.delete",
+      "category": "lo",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Historical task-specific acceptance only; no arbitrary design guarantee"
+    },
+    {
+      "name": "project.get_focused",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.get_open_projects",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.get_project_path",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.get_documents",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.compile",
+      "category": "project",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.open",
+      "category": "project",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.close",
+      "category": "project",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.get_messages",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.get_compile_freshness",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.get_design_stats",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.get_nets",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.find_component",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "project.get_bom",
+      "category": "project",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.query_objects",
+      "category": "generic",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.modify_objects",
+      "category": "generic",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.delete_objects",
+      "category": "generic",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.batch_modify",
+      "category": "generic",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.place_wire",
+      "category": "generic",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.place_net_label",
+      "category": "generic",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.place_port",
+      "category": "generic",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.place_sch_component_from_library",
+      "category": "generic",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Declared; real-library placement remains unverified"
+    },
+    {
+      "name": "generic.set_sch_components_parameters",
+      "category": "generic",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "library.get_component_details",
+      "category": "library",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "library.set_current_component",
+      "category": "library",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "library.get_components",
+      "category": "library",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "library.uninstall_library",
+      "category": "library",
+      "risk": "persistent_library_registry_change_confirm_required",
+      "standard_mcp_tools": [],
+      "verification_scope": "Only dry_run and CONFIRM_REQUIRED refusal verified; actual uninstall unverified"
+    },
+    {
+      "name": "library.set_model_source",
+      "category": "library",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "library.get_footprints",
+      "category": "library",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "library.get_footprint_pads",
+      "category": "library",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "pcb.get_board_statistics",
+      "category": "pcb",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "pcb.get_components",
+      "category": "pcb",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "pcb.get_layer_stackup",
+      "category": "pcb",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "pcb.get_mech_layer_names",
+      "category": "pcb",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "pcb.set_layer_visibility",
+      "category": "pcb",
+      "risk": "stateful_review_command_contract",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    },
+    {
+      "name": "generic.get_sch_geometry",
+      "category": "generic",
+      "risk": "read_or_observe",
+      "standard_mcp_tools": [],
+      "verification_scope": "Bounded history; see docs/verification.md, not all options or persistence"
+    }
+  ]
+}

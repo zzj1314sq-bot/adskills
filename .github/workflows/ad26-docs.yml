@@ -1,0 +1,17 @@
+name: Validate AD26 protocol package
+on:
+  push:
+    paths: ['README.md', 'ad26-mcp/**', '.github/workflows/ad26-docs.yml']
+  pull_request:
+    paths: ['README.md', 'ad26-mcp/**', '.github/workflows/ad26-docs.yml']
+permissions:
+  contents: read
+jobs:
+  offline-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python ad26-mcp/tools/validate_package.py

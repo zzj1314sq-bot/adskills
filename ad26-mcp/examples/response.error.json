@@ -1,0 +1,14 @@
+{
+  "protocol_version": 26,
+  "instance_id": "ad26",
+  "session_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "revision": "ad26-unified-v1.3-generic",
+  "id": "00000000000000000000000000000001",
+  "success": false,
+  "data": null,
+  "error": {
+    "code": "NOT_LOADED",
+    "message": "Synthetic example: schematic is not loaded",
+    "details": null
+  }
+}
