@@ -1,5 +1,5 @@
 {
-  "package_version": "1.0.0",
+  "package_version": "1.0.1",
   "published_scope": "documentation-contracts-pipeline-only",
   "date": "2026-11-25",
   "native_protocol_version": 26,
@@ -7,13 +7,13 @@
   "standard_mcp_tools": 5,
   "fixture_origin": "synthetic, not native evidence",
   "files_sha256": {
-    "README.md": "a1aa518ce08785f549be13f188571f07e2e96278d9fe0dd39152c9fee3bb4123",
-    "ad26-mcp/README.md": "d77d720e77f4864786e5e5feee2b99de94f4bab3aa19cfd9648954dd4361ae68",
+    "README.md": "364823ac389bf5cb97b3bc71ec053f103649e9a31145ef3207ea6e21d1be550f",
+    "ad26-mcp/README.md": "b208abbc2e6377120e6c042fa1c4d9802075639a529b49f220081a1b3dabf55a",
     "ad26-mcp/docs/protocol.md": "16b3a1c9ad4a8db98001a998944bf698b40cb00c4af8982b342cb06ce241f5c3",
     "ad26-mcp/docs/setup.md": "01a29372c63b2abca1709baad0c392b60f1db526d094c46b17865efc542d9ab8",
     "ad26-mcp/docs/verification.md": "513394c966e26e376104d4129843fff87383d21353743846eed358a71ca76af8",
     "ad26-mcp/templates/continuation.md": "7d128d290976dec40ac6990e862ecc98542026f292bda52e9035a0f2ce60a4db",
-    "ad26-mcp/CHANGELOG.md": "d62cf0109e33e0c4513e6cbc108061ccc2aca7def6b52f77247b5ee6c9161980",
+    "ad26-mcp/CHANGELOG.md": "e97fd640bdc270fd1d3ed2e4cd55a9737c868327149c292723bada9dc5fd97e8",
     "ad26-mcp/.gitignore": "7ac34e50e93401e30293bb3d2dcddff12ec9d237c33976ce3d8d4dda6ed8234a",
     "ad26-mcp/docs/pipeline.md": "1a9f8a0ba256cd0e123f4d1bd5b2e2713fbb1f6e4a5c5750e0fc55386ec6a731",
     "ad26-mcp/templates/task.json": "bcf9b3ecf336de3d7119b42e6b4dbe127699cafd206688505126c40e099f26d2",
